@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numérotation de vos photos de groupe</title>
+  <script type="module" crossorigin src="/assets/index-Be9NqpzN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CgGC0pHu.css">
+</head>
+<body>
+	<div  id="page1">
+		<div class="container">
+			<h1>Numérotation de vos photos de groupe</h1>
+			<p class="lead">
+				L'outil proposé sur cette page vous permet de numéroter les visages de vos photos de groupe. En transférant votre photo sur le serveur, vous avez ensuite la possibilité de télécharger la version numérotée.
+			</p>
+			<div class="alert alert-warning" role="alert">
+				Les photos transférées sont pour l'instant conservées sur le serveur pour une durée indéterminée. Si vous constatez un souci dans la numérotation, vous pouvez ainsi me transmettre l'url de la photo pour investigation.
+			</div>              
+			<form id="import">
+				<div class="mb-3">
+					<label for="formFile" class="form-label">Image</label>
+					<input class="form-control" type="file" name="input" id="inputFile" accept=".jpg, .jpeg, .png">
+					<figure class="figure">
+						<img src="#" class="figure-img img-fluid rounded" alt="" id="preview">
+					</figure>
+				</div>
+				<button type="submit" class="btn btn-primary">Valider</button>
+			</form>
+		</div>
+	</div>
+	<div id="page2">
+		<div id="container">
+			<img id="my-image" src="" alt="Photo de groupe">
+			<div class="zoom-buttons">
+				<button class="zoom-button" id="zoom-in" title="Augmenter le zoom">Zoom +</button>
+				<button class="zoom-button" id="zoom-out" title="Réduire le zoom">Zoom -</button>
+			</div>
+			<div class="move-buttons">
+				<button class="move-button" id="move-left" title="Déplacer l'image vers la droite">&lt;</button>
+				<button class="move-button" id="move-right" title="Déplacer l'image vers la gauche">&gt;</button>
+			</div>
+			<div class="action-buttons">
+				<i class="bi-save save-button" title="Sauvegarder les métadonnées dans votre image"></i>
+			</div>
+		</div>
+    </div>
+
+</body>
+</html>

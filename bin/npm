@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --rm --interactive -u1000 -p 5173:5173 --name node --tty --volume $PWD:/app --workdir /app "node:23.1.0-alpine3.20" npm "$@"
